@@ -62,6 +62,7 @@ export function useOptionalAdminUser(): User | undefined {
     return;
   }
 
+  // @ts-ignore: global env.
   if (ENV.ADMIN_EMAIL !== user.email) {
     return;
   }
