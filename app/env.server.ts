@@ -1,8 +1,4 @@
-import invariant from "tiny-invariant";
-
 export function getEnv() {
-  invariant(process.env.ADMIN_EMAIL, "admin email is required.");
-
   return {
     ADMIN_EMAIL: process.env.ADMIN_EMAIL,
   };
